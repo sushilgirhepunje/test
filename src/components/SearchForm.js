@@ -18,9 +18,10 @@ const SearchForm = ({onSearch}) => {
       };
     
       return (
-        <div className="capsules-search-form">
-        <form onSubmit={handleSubmit}>
+        <div className="capsules-search-form flex flex-row  justify-evenly p-4  shadow-sm shadow-current rounded-xl">
+        <form onSubmit={handleSubmit} className='flex flex-row justify-evenly'>
           <div>
+            <lable > Capsule Serial No</lable> <br/>
             <input
               type="text"
               name="capsule_serial"
@@ -30,6 +31,7 @@ const SearchForm = ({onSearch}) => {
             />
           </div>
           <div>
+          <label >Capsule Status</label> <br/>
             <input
               type="text"
               name="status"
@@ -39,6 +41,7 @@ const SearchForm = ({onSearch}) => {
             />
           </div>
           <div>
+          <lable >Capsule Type</lable> <br/>
             <input
               type="text"
               name="type"
@@ -48,7 +51,7 @@ const SearchForm = ({onSearch}) => {
             />
           </div>
           <div>
-            <button type="submit">Search</button>
+            <button type="submit" className='bg-gray-600 text-white px-2 my-3 rounded-xl'>Search</button>
           </div>
         </form>
         </div>

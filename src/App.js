@@ -46,7 +46,7 @@ function App() {
   }
 
   return (
-    <div className="App bg-black">
+    <div className="App ">
       <NavBar />
       <Banner />
       <CapsulesSearchForm onSearch={handleSearch} />
